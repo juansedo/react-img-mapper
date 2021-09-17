@@ -274,8 +274,23 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
 
   const renderTexts = () => 
     map.areas.map((area, index) => {
+      const scaledCoords = scaleCoords(area.coords).map(x => Number(x));
+      const [x1, y1, x2, y2] = scaledCoords;
+      const width = Math.abs(x2 - x1);
+      const height = Math.abs(y2 - y1);
+
+      const top = y1 + height / 2;
+      const left = x1 + width / 2;
+      const transform = `translate(-50%, 0)`;
+
       return (
-        <p key={index}>{area.name}</p>
+        <p
+          key={index}
+          className={styles().desc}
+          style={{top: top, left: left, transform: transform}}
+        >
+            {area.name}
+        </p>
       )
     })
 

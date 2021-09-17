@@ -24,6 +24,7 @@ interface StylesProps {
   canvas: React.CSSProperties;
   img: React.CSSProperties;
   map: React.CSSProperties | undefined;
+  desc: Recat.CSSProperties;
 }
 
 const styles = (props?: Partial<ImageMapperProps>): StylesProps => ({
@@ -41,6 +42,14 @@ const styles = (props?: Partial<ImageMapperProps>): StylesProps => ({
       cursor: 'pointer',
     }) ||
     undefined,
+  desc: {
+    color: `white`,
+    zIndex: 5,
+    fontSize: `12px`,
+    margin: 0,
+    padding: 0,
+    position: `absolute`,
+  },
 });
 
 export default styles;
