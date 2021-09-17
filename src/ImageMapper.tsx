@@ -267,10 +267,17 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
           onTouchEnd={event => touchEnd(extendedArea, index, event, props)}
           onClick={event => click(extendedArea, index, event)}
           href={area.href}
-          alt="map"
+          alt={area.name ?? "map"}
         />
       );
     });
+
+  const renderTexts = () => 
+    map.areas.map((area, index) => {
+      return (
+        <p key={index}>{area.name}</p>
+      )
+    })
 
   return (
     <div id="img-mapper" style={styles(props).container} ref={container}>
@@ -290,6 +297,9 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
       <map className="img-mapper-map" name={map.name} style={styles().map}>
         {isRendered && !disabled && renderAreas()}
       </map>
+      <div>
+        {isRendered && !disabled && renderTexts()}
+      </div>
     </div>
   );
 };
