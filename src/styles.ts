@@ -43,7 +43,7 @@ const styles = (props?: Partial<ImageMapperProps>): StylesProps => ({
     }) ||
     undefined,
   desc: {
-    color: `white`,
+    color: `black`,
     zIndex: 5,
     fontSize: `12px`,
     margin: 0,
