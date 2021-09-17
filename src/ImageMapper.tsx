@@ -286,8 +286,7 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
       return (
         <p
           key={index}
-          className={styles().desc}
-          style={{top: top, left: left, transform: transform}}
+          style={{...styles().desc, top: top, left: left, transform: transform}}
         >
             {area.name}
         </p>

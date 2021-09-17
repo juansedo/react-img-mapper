@@ -24,7 +24,7 @@ interface StylesProps {
   canvas: React.CSSProperties;
   img: React.CSSProperties;
   map: React.CSSProperties | undefined;
-  desc: Recat.CSSProperties;
+  desc: React.CSSProperties;
 }
 
 const styles = (props?: Partial<ImageMapperProps>): StylesProps => ({
