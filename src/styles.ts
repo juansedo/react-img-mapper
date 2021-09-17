@@ -49,6 +49,8 @@ const styles = (props?: Partial<ImageMapperProps>): StylesProps => ({
     margin: 0,
     padding: 0,
     position: `absolute`,
+    pointerEvents: `none`,
+    userSelect: `none`,
   },
 });
 

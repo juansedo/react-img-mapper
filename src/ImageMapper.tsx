@@ -279,7 +279,7 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
       const width = Math.abs(x2 - x1);
       const height = Math.abs(y2 - y1);
 
-      const top = y1 + height / 2 - 8; // 8 according to font-size (12)
+      const top = y1 + height / 2 - 9; // 8 according to font-size (12)
       const left = x1 + width / 2;
       const transform = `translate(-50%, 0)`;
 
