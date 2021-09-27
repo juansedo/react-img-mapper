@@ -1,8 +1,8 @@
-# React Img Mapper
+# React Img Mapper Extended
 
 React Component to highlight interactive zones in images
 
-> This repository is based on react-image-mapper but with some enhancements
+> This repository is based on [react-img-mapper](https://github.com/img-mapper/react-img-mapper) but with some enhancements
 
 ``` 
 1. Promise to be maintained this repository        
@@ -18,31 +18,31 @@ React Component to highlight interactive zones in images
 
 ## Installation
 
-Package: [react-img-mapper](https://www.npmjs.com/package/react-img-mapper)
+Package: [react-img-mapper-extended](https://www.npmjs.com/package/react-img-mapper)
 
 **NPM**
 
 ```  
-npm install react-img-mapper --save        
+npm install react-img-mapper-extended --save        
 ```  
 
 **Yarn**
 
 ```  
-yarn add react-img-mapper      
+yarn add react-img-mapper-extended
 ```    
 
 ## Demo & Examples
 
 Live demo: [demo](https://img-mapper.github.io/react-docs)
 
-To run the example locally
+<!-- To run the example locally
 
 ```        
 git clone https://github.com/img-mapper/react-docs.git
 npm install        
 npm start        
-```        
+```         -->
 
 Then open [`localhost:3000`](http://localhost:3000) in a browser.
 
@@ -149,4 +149,4 @@ When received from an event handler, an area is extended with the following prop
 
 Distributed with an MIT License. See LICENSE.txt for more details!
 
-Copyright (c) 2021 Nisharg Shah
+Copyright (c) 2021 Juan Sebastián Díaz
